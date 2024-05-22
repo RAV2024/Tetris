@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background: #000;
+    color: rgb(63, 63, 112);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  
+  .tetris {
+    font-size: 55px;
+    margin: auto;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .gameControls{
+    position: relative;
+  }
+
+  #startButton{
+    background-color: #5334db; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 20px; 
+    cursor: pointer; 
+  }
+
+  #startButton:hover {
+    background-color: rgb(128, 0, 77); 
+  }
+
+  #pauseButton{
+    background-color: #5334db; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 20px; 
+    cursor: pointer; 
+  }
+
+  #pauseButton:hover {
+    background-color: rgb(128, 0, 77); 
+}
+  
+  
+  .main {
+    width: 370px; 
+    height: 720px;
+    margin: 20px auto 0;
+    border: 10px solid rgb(255, 255, 255);
+    font-size: 0;
+  }
+  
+  .cell {
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(255, 255, 255);
+    display: inline-block;
+  }
+  
+  .movingCell {
+    background-color: rgb(63, 63, 112);
+  }
+  
+  .fixedCell {
+    background-color: rgb(128, 0, 77);
+  }
+  
+  #next-tetro {
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    font-size: 0;
+  }
+  
+  #gameOverMessage {
+    font-size: 100px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+
+
+
+
+
+  
